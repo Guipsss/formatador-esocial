@@ -1,11 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   margin: 0;
-  font-size: 12px;
   font-family: 'Roboto', sans-serif; }
 
+.field-container {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden; }
+  .field-container .field-wrapper {
+    width: 50%; }
+    @media screen and (max-width: 900px) {
+      .field-container .field-wrapper {
+        width: 95%; } }
+    .field-container .field-wrapper p {
+      color: rgba(0, 0, 0, 0.7); }
+    .field-container .field-wrapper > span {
+      display: block;
+      font-size: 42px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+      color: black; }
+    .field-container .field-wrapper .instructions {
+      width: 100%;
+      display: block; }
+      .field-container .field-wrapper .instructions > span {
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.8); }
+      .field-container .field-wrapper .instructions > p {
+        text-align: justify; }
+        .field-container .field-wrapper .instructions > p:last-of-type {
+          font-size: 12px;
+          background-color: rgba(0, 0, 0, 0.1);
+          padding: 5px;
+          border-radius: 5px;
+          word-break: break-all; }
+    .field-container .field-wrapper > textarea {
+      width: 100%;
+      height: 200px;
+      resize: none; }
+    .field-container .field-wrapper .btn {
+      width: 100%;
+      display: flex; }
+      .field-container .field-wrapper .btn > button {
+        background-color: #383838;
+        color: white;
+        font-size: 14px;
+        padding: 8px 25px 8px 25px;
+        border: 0;
+        margin-left: auto;
+        margin-top: 10px; }
+
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  font-size: 12px; }
   table tr {
     background-color: rgba(0, 0, 0, 0.1);
     text-align: left; }
@@ -17,5 +74,20 @@ table {
       padding: 8px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       min-width: 100px; }
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7); }
+  footer .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .redes > a {
+      color: rgba(0, 0, 0, 0.7); }
+      footer .redes > a > i {
+        padding: 5px;
+        font-size: 22px; }
 
 /*# sourceMappingURL=style.css.map */

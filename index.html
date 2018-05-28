@@ -5,13 +5,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+	<meta name="author" content="Guilherme de Paula Silva">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>Formatador eSocial</title>
 </head>
 <body>
-    <textarea id="file-content"></textarea>
-    <button id="submit">Enviar</button>
-    <script src="script.js"></script>
+    <div class="field-container">
+        <div class="field-wrapper">
+            <span>Formatador de Arquivo Processado eSocial</span>
+            <div class="instructions">
+                <span>Instruções</span>
+                <p><strong>1)</strong> Abra o arquivo previamente baixado e copie todo o conteúdo dele.</p>
+                <p><strong>2)</strong> Cole o conteúdo no campo de texto abaixo.</p>
+                <p><strong>3)</strong> Clique em formatar. Pronto!</p>
+                <span>Exemplo do conteúdo do arquivo:</span>
+                <p><strong>Nota: </strong>Se desejar testar, copie o conteúdo abaixo e siga as instruções.</p>
+                <p>CPF;NIS;NOME;DN;COD_NIS_INV;COD_CPF_INV;COD_NOME_INV;COD_DN_INV;COD_CNIS_NIS;COD_CNIS_DN;COD_CNIS_OBITO;COD_CNIS_CPF;COD_CNIS_CPF_NAO_INF;COD_CPF_NAO_CONSTA;COD_CPF_NULO;COD_CPF_CANCELADO;COD_CPF_SUSPENSO;COD_CPF_DN;COD_CPF_NOME;COD_ORIENTACAO_CPF;COD_ORIENTACAO_NIS</br>
+                11111111111;11111111111;LOREM IPSUM;12345678;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0</br>
+                22222222222;22222222222;LOREM IPSUM;87654321;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0</br>
+                33333333333;33333333333;LOREM IPSUM;147852369;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0</br>
+                44444444444;44444444444;LOREM IPSUM;369852147;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0</br></br>     
+                Numero de registros Processados: 4 de 4</p>
+            </div>
+            <textarea id="file-content"></textarea>
+            <div class="btn">
+                <button id="submit">Formatar</button>
+            </div>
+        </div>
+    </div>
     <table id="result"></table>
+    <footer>
+        Desenvolvido por <strong>Guilherme de Paula Silva</strong>
+        <div class="redes">
+            <a href="https://github.com/guipsss" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/guips/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

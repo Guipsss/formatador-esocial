@@ -14,9 +14,7 @@ let format = () => {
     for(i = 0; i < rows.length; i++) {
         rows[i] = content[i];
         rows[i] = rows[i].split(";");
-        //console.log(rows[i]);
     }
-    //console.log(rows);
 
     let array = new Array(rows.length);
 
@@ -73,8 +71,6 @@ let format = () => {
             </tr>
         `).join('')}
     `;
-
-    console.log(array);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
