@@ -1,11 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
     margin: 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
-th {
-    background-color: rgba(0,0,0,0.3);
-}
+table {
+    border-collapse: collapse;
 
-td {
-    background-color: rgba(0,0,0,0.1);
+    tr {
+        background-color: rgba(0,0,0,0.1);
+        text-align: left;
+
+        &:nth-child(even) {
+            background-color: white;
+        }
+
+        &:first-of-type {
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid rgba(0,0,0,0.1);
+            min-width: 100px;
+        }
+    }
 }
